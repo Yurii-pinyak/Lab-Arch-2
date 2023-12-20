@@ -1,0 +1,131 @@
+{
+    "ports": [
+      {
+        "id": 0,
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "container": [0, 1, 2]
+      },
+      {
+        "id": 1,
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "container": []
+      },
+      {
+        "id": 2,
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "container": []
+      },
+      {
+        "id": 3,
+        "latitude": 37.7749,
+        "longitude": -122.4194,
+        "container": []
+      }
+    ],
+  
+    "containers": [
+      {
+        "id": 0,
+        "weight": 1000,
+        "type": "basicContainer"
+      },
+      {
+        "id": 1,
+        "weight": 3500,
+        "type": "heavyContainer"
+      },
+      {
+        "id": 2,
+        "weight": 3500,
+        "type": "heavyContainer"
+      },
+      {
+        "id": 3,
+        "weight": 3500,
+        "type": "heavyContainer"
+      },
+      {
+        "id": 4,
+        "weight": 3500,
+        "type": "liquidContainer"
+      },
+      {
+        "id": 5,
+        "weight": 2000,
+        "type": "basicContainer"
+      },
+      {
+        "id": 6,
+        "weight": 4000,
+        "type": "heavyContainer"
+      },
+      {
+        "id": 7,
+        "weight": 5000,
+        "type": "heavyContainer"
+      },
+      {
+        "id": 8,
+        "weight": 2500,
+        "type": "liquidContainer"
+      },
+      {
+        "id": 9,
+        "weight": 3000,
+        "type": "refrigeratedContainer"
+      }
+    ],
+  
+    "ships": [
+      {
+        "id": 0,
+        "fuel": 90000.0,
+        "port": 0,
+        "totalWeightCapacity": 12000,
+        "maxNumberOfAllContainers": 15,
+        "maxNumberOfBasicContainers": 4,
+        "maxNumberOfHeavyContainers": 6,
+        "maxNumberOfRefrigeratedContainers": 4,
+        "maxNumberOfLiquidContainers": 3,
+        "fuelConsumptionPerKM": 10.5
+      },
+      {
+        "id": 1,
+        "fuel": 90000.0,
+        "port": 0,
+        "totalWeightCapacity": 12000,
+        "maxNumberOfAllContainers": 15,
+        "maxNumberOfBasicContainers": 4,
+        "maxNumberOfHeavyContainers": 6,
+        "maxNumberOfRefrigeratedContainers": 4,
+        "maxNumberOfLiquidContainers": 3,
+        "fuelConsumptionPerKM": 10.5
+      }
+    ],
+  
+    "actions": [
+      {
+        "action": "load",
+        "containers": [0, 1],
+        "ship": 0
+      },
+      {
+        "action": "load",
+        "containers": [2],
+        "ship": 0
+      },
+      {
+        "action": "sail",
+        "port": 1,
+        "ship": 0
+      },
+      {
+        "action": "unload",
+        "containers": [0, 1, 2],
+        "ship": 0
+      }
+    ]
+  }
